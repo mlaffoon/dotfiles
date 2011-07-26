@@ -25,7 +25,7 @@ function _dotfiles_update {
   if [ ! -d '.git' ]; then
     _safe_execute "Initializing git repository" \
                   "git init &&
-                   git remote add --fetch origin git://github.com/kpumuk/dotfiles.git &&
+                   git remote add --fetch origin git://github.com/mlaffoon/dotfiles.git &&
                    git branch --track master origin/master &&
                    git reset"
   fi
@@ -92,7 +92,7 @@ function _dotfiles_install_rvm {
 }
 
 function _dotfiles_install_homebrew {
-  local dir=${1:-${HOMEBREW_HOME:-/opt/homebrew}}
+  local dir=${1:-${HOMEBREW_HOME:-/usr/local}}
 
   echo "Installing homebrew to ${dir}"
 
@@ -114,7 +114,7 @@ function _dotfiles_install_homebrew {
 }
 
 function _dotfiles_install_formulas {
-  local dir=${1:-${HOMEBREW_HOME:-/opt/homebrew}}
+  local dir=${1:-${HOMEBREW_HOME:-/usr/local}}
 
   echo 'Installing default Homebrew formulas'
 

@@ -1,4 +1,4 @@
-HOMEBREW_HOME=/opt/homebrew
+HOMEBREW_HOME=/usr/local/Library/Homebrew
 [[ ! -x "$HOMEBREW_HOME/bin/brew" ]] && HOMEBREW_HOME=/usr/local
 [[ ! -x "$HOMEBREW_HOME/bin/brew" ]] && HOMEBREW_HOME=/opt/local
 [[ ! -x "$HOMEBREW_HOME/bin/brew" ]] && HOMEBREW_HOME=
