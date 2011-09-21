@@ -6,7 +6,7 @@ function dotfilesupdate {
     if [ ! -d '.git' ]; then
       (
         git init &&
-        git remote add --fetch origin git://github.com/kpumuk/dotfiles.git &&
+        git remote add --fetch origin git://github.com/mlaffoon/dotfiles.git &&
         git branch --track master origin/master &&
         git reset
       ) || exit $?

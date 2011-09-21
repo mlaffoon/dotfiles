@@ -65,7 +65,7 @@ end
 
 # Looksee gem
 begin
-  require 'looksee'
+  require 'looksee/shortcuts'
 rescue LoadError
   puts 'Looksee gem not available: `gem install looksee`'
 end
